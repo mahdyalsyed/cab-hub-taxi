@@ -13,7 +13,7 @@ import About from "@/components/About/About";
 import AppStore from "@/components/AppStore/AppStore";
 import Testimonial from "@/components/Testimonial/Testimonial";
 
-const page = () => {
+const Page = () => {
     useEffect(() => {
         Aos.init({
             offset: 100,
@@ -36,4 +36,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;

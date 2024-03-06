@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import BgImage from "../../assets/testimonial.png";
-import { data } from "autoprefixer";
+import Image from "next/image";
 
 const bgStyle = {
     backgroundImage: `url(${BgImage.src})`,
@@ -99,11 +99,19 @@ const Testimonial = () => {
                                             </div>
                                             {/* image section */}
                                             <div className="flex items-center gap-4">
-                                                <img
+                                                {/* <img
                                                     src={img}
                                                     alt={name}
                                                     className="rounded-full w-16 h-16"
+                                                /> */}
+                                                <Image
+                                                    src={img}
+                                                    alt={name}
+                                                    className="rounded-full"
+                                                    width={50}
+                                                    height={50}
                                                 />
+
                                                 <div className="space-y-2">
                                                     <h1 className="text-xl font-bold text-black/60 dark:text-primary font-cursive">
                                                         {name}
